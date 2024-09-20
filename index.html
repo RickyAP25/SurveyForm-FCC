@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Ice Cream Survey Form</h1>
+    <p id="description">Give us your opinion about our ice cream</p>
+
+    <form id="survey-form" method="post" action="">
+
+      <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Write your name" required></label>
+      <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your Email" required></label>
+      <label id="number-label" for="number">Age <input id="number" name="age" type="number" min="13" max="120" placeholder="State your Age" required></label>
+
+      <label for="dropdown">What is your job?
+        <select id="dropdown">
+          <option>Student</option>
+          <option>Freelancer</option>
+          <option>Employee</option>
+        </select>
+      </label>
+
+      <legend>Would you recomend our ice cream to others</legend>
+      <label class="decision"><input name="decision" value="sure" type="radio" class="inline" required>Sure</label>
+      <label class="decision"><input name="decision" value="no" type="radio" class="inline" required>Not Sure</label>
+
+      <label id="taste"> What is your favourite ice cream taste?
+        <label class="flavor">
+          <input value="chocolate" name="fav-taste" type="checkbox" class="inline flavor"> Chocolate
+        </label>
+        <label class="flavor">
+          <input value="mint" name="fav-taste" type="checkbox"class="inline flavor"> Mint
+         </label>
+         <label class="flavor"> 
+          <input value="caramel" name="fav-taste" type="checkbox"class="inline flavor"> Caramel
+        </label>
+        <label class="flavor">
+          <input value="tiramisu" name="fav-taste" type="checkbox"class="inline flavor"> Tiramisu
+        </label>
+      </label>
+
+    <label> Any comments or suggestion?
+      <textarea class="closer" name="comments" placeholder="Write a comment"></textarea>
+    </label>
+
+    <label><input id="submit" name="submit" type="submit"></label>
+
+    </form>
+
+  </body>
+
+</html>
