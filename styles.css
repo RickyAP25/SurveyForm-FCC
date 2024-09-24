@@ -1,25 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
     margin: 0;
     background-color: rgb(212, 185, 185);
     color: rgb(103, 100, 135);
     font-family: sans-serif
-  }
+}
   
-  h1, p{
+h1, p{
     text-align: center;
     margin: auto;
-  }
+}
   
-  h1{
+h1{
     padding-top: 20px;
-  }
+}
   
-  p{
+p{
     padding-bottom: 2rem;
     font-size: 1.2rem;
-  }
+}
   
-  form{
+form{
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
@@ -27,21 +31,21 @@ body{
     background-color: rgb(198, 168, 173);
     padding: 20px;
     border-radius: 10px;
-  }
+}
   
-  label{
+label{
     display: block;
     margin-bottom: 15px;
     margin-top: 0;
-  }
+}
   
-  .decision{
+.decision{
     margin: 0 0 3px 0;
     padding: 0;
     height: 35px;
-  }
+}
   
-  input, textarea, select{
+input, textarea, select{
     width: 100%;
     margin: 4px 0 0 0;
     min-height: 2em;
@@ -49,35 +53,45 @@ body{
     border: none;
     height: 3rem;
     background-color: rgb(237, 233, 233);
-    font-family: inherit
-  }
+    font-family: inherit;
+    padding-left: 15px;
+}
 
-  input::placeholder, textarea::placeholder{
+input::placeholder, textarea::placeholder{
     text-align: left;
-    padding: 6px;
     font-size: 14px;
-  }
+}
+
+textarea{
+    padding-top: 15px;
+}
   
-  .inline{
+.inline{
     width: unset;
     vertical-align: middle;
     margin: 0 0.5rem 0 0;
-  }
+}
   
-  #taste{
+#taste{
     margin: 15px 0 0 0;
-  }
+}
   
-  .flavor{
+.flavor{
     margin-bottom: 0;
     height: 35px;
-  }
+}
   
-  .closer{
+.closer{
     margin: 0.5rem 0;
     min-height: 100px;
-  }
+}
   
-  #submit{
+#submit{
     background-color: rgb(237, 233, 233);
+    font-size: 15px;
+    border: 1px solid rgb(103, 100, 135);
+}
+
+#submit:hover{
+  background-color: rgb(203, 196, 234);
 }
